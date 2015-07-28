@@ -1,9 +1,17 @@
-from django.test import TestCase
-
-# Create your tests here.
+from django.test import TestCase, Client
 
 
 class SomeTests(TestCase):
     def test_math(self):
-        "put docstrings in your tests"
-        assert(2 + 2 == 5)
+        """ put docstrings in your tests"""
+        assert(2 + 2 == 4)
+
+
+class ContactsTest(TestCase):
+    def setUp(self):
+        self.c = Client()
+
+    def test_contacts(self):
+        """ response checking"""
+        response = self.c.get('/')
+        self.assertEqual(response.status_code, 200)

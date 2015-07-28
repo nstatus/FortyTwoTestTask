@@ -1,0 +1,19 @@
+{% extends 'hello_base.html' %}
+
+{% block page_content %}
+<div class="row small-center">
+    <div class="small-6 column">
+        <p><strong>Name:</strong> {{ user.first_name }}</p>
+        <p><strong>Last name:</strong> {{ user.last_name }}</p>
+        <p><strong>Date of birth:</strong> {{ user.birthday }}</p>
+        <p><strong>Bio:</strong><br />{{ user.bio|linebreaksbr }}</p>
+    </div>
+    <div class="small-6 column">
+        <p><u><strong>Contacts</strong></u></p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Jabber:</strong> {{ user.jid }}</p>
+        <p><strong>Skype:</strong> {{ user.skype_id }}</p>
+        <p><strong>Other contacts:</strong><br />{{ user.other|linebreaksbr }}</p>
+    </div>
+</div>
+{% endblock %}
