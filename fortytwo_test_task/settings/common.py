@@ -56,7 +56,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'fortytwo_test_task.urls'
 
-WSGI_APPLICATION = 'fortytwo_test_task.wsgi_app.application'
+WSGI_APPLICATION = 'fortytwo_test_task.wsgi.application'
 
 
 # Database
