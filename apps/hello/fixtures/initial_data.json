@@ -1,0 +1,63 @@
+[   
+   {
+      "pk":1,
+      "model":"auth.user",
+      "fields":{
+         "username":"admin",
+         "first_name":"",
+         "last_name":"",
+         "is_active":true,
+         "is_superuser":true,
+         "is_staff":true,
+         "last_login":"2015-07-28T10:05:58.086Z",
+         "groups":[
+
+         ],
+         "user_permissions":[
+
+         ],
+         "password":"pbkdf2_sha256$12000$lEOLXYSDEFK3$4iwC/Yc5BTK74Sj3tG7unZinLGvl1Vrn703pM7XXcqs=",
+         "email":"",
+         "date_joined":"2015-07-28T10:05:38.495Z"
+      }
+   },
+   {
+      "pk":2,
+      "model":"auth.user",
+      "fields":{
+         "username":"sergey",
+         "first_name":"Sergey",
+         "last_name":"Sipiev",
+         "is_active":true,
+         "is_superuser":false,
+         "is_staff":false,
+         "last_login":"2015-07-28T11:29:44Z",
+         "groups":[
+
+         ],
+         "user_permissions":[
+
+         ],
+         "password":"sergey",
+         "email":"sergey.sipiev@yandex.ru",
+         "date_joined":"2015-07-28T11:29:44Z"
+      }
+   },
+   {
+      "pk":2,
+      "model":"hello.userprofile",
+      "fields":{
+         "bio":"Lorem ipsum dolor sit amet, regione euripidis pertinacia et mea. Ex vel veri modus verterem. Laboramus ullamcorper te vis. Utinam tractatos intellegebat nec ne, ad mea debet offendit neglegentur. Omnis aeque delectus cum eu, porro delicatissimi qui ad, sea aliquip euismod veritus an. Ad nulla sapientem mel, ut erant hendrerit mel.\r\n\r\nEum ut meis magna copiosae, autem tollit te nam, qui an ridens voluptatibus. Et omnium mentitum voluptatum has, aperiam eripuit id nec, no solet pertinacia pro. Veniam detracto ea est. Eu vim movet evertitur liberavisse, congue alienum copiosae his et, mei etiam debet ex. Est illum expetenda in, qui rebum consequuntur in, amet modus prompta ne mel. Labore recteque usu eu.\r\n\r\nId sit modo noster argumentum, et duo liber affert. Usu doming animal legendos eu. Cetero audiam ea duo, est at detracto eleifend urbanitas. His ei adipisci dissentias. Ei eum veri tritani.\r\n\r\nSea vivendum tincidunt in, ex pro solum iriure. His veniam maluisset adipiscing cu, justo option an nec. Cum ad modo senserit instructior, aperiam eripuit fastidii quo no. Per minim minimum ad, eu per malis scribentur. Elit everti utroque per ei, pro impedit noluisse ne, pertinacia accommodare ad has. Adhuc nominavi vulputate ius an, vis in alii nulla numquam.\r\n\r\nCommodo luptatum cotidieque in mea, quot falli ut has, at eloquentiam reprehendunt duo. Ei eum nostrum erroribus. Esse necessitatibus cu vix, mei vero vide id, ut eum dicant explicari. Mentitum vulputate ea eam. Pri in natum tritani, pro te porro utinam, virtute fastidii te sed. Nostrum instructior ex eos. Ipsum habemus antiopam cu est, nibh tacimates te nam.",
+         "jid":"nstatus@42cc.co",
+         "birthday":"1977-05-07",
+         "other":"123\r\n321\r\n3456",
+         "groups":[
+
+         ],
+         "user_permissions":[
+
+         ],
+         "skype_id":"s.sipiev"
+      }
+   }
+]
