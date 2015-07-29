@@ -1,0 +1,42 @@
+{% extends 'hello_base.html' %}
+
+{% block title %}
+TODO: If there are N new requests, page title should start with (N).
+{% endblock %}
+
+{% block page_content %}
+<script type="text/javascript">
+    function update(){
+        $.ajax({
+            url: "/requests/",
+            dataType: "json",
+            success: function(data){
+                var len = data.requests.length;
+                $("title").html(len+" last requests");
+                $("#h_cont").html(len+" last requests");
+                s = "";
+                for(var i=0; i<len; i++){
+                    s += "<p>"+data.requests[i].data+"</p>";
+                }
+                $("#requests-log").html(s);
+            },
+        });
+    }
+    $(document).ready(function(){
+        setInterval(update, 2000);
+    })
+</script>
+
+<div class="row">
+    <div class="small-centered"><h2 id="h_cont">{{ requests.count }} last requests</h2></div>
+</div>
+<div class="row">
+        <div class="small-10 column">
+        <div id="requests-log">
+        {% for request in requests %}
+        <p>{{ request.data }}</p>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

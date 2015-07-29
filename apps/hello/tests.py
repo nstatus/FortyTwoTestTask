@@ -3,7 +3,7 @@ from django.test import TestCase, Client
 
 class SomeTests(TestCase):
     def test_math(self):
-        """ put docstrings in your tests"""
+        """ put docstrings in your tests """
         assert(2 + 2 == 4)
 
 
@@ -12,6 +12,11 @@ class ContactsTest(TestCase):
         self.c = Client()
 
     def test_contacts(self):
-        """ response checking"""
+        """ checking of contacts view """
         response = self.c.get('/')
+        self.assertEqual(response.status_code, 200)
+
+    def test_requests(self):
+        """ checking of requests view """
+        response = self.c.get('/requests/')
         self.assertEqual(response.status_code, 200)
