@@ -10,3 +10,11 @@ class UserProfile(User):
     birthday = models.DateField(verbose_name='Date of birth')
     bio = models.TextField(verbose_name='Bio')
     other = models.TextField(verbose_name='Other contacts')
+
+
+class Request(models.Model):
+    data = models.TextField()
+    datetime = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-datetime']
