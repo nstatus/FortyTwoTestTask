@@ -8,3 +8,8 @@ def contacts(request):
     if not user_data:
         return HttpResponse('User not found')
     return render(request, 'contacts.html', {'user': user_data})
+
+
+def requests(request):
+    pass
+    return render(request)
