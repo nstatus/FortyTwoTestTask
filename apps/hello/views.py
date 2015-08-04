@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from apps.hello.models import UserProfile, Request
 from django.core import serializers
-import json
 
 
 def contacts(request):
@@ -15,5 +14,6 @@ def contacts(request):
 def requests(request):
     r = Request.objects.all()
     if request.is_ajax():
-        return HttpResponse(serializers.serialize('json', r), content_type='application/json')
+        return HttpResponse(serializers.serialize('json', r),
+                            content_type='application/json')
     return render(request, 'requests.html', {'last_requests': r})
