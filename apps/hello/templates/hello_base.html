@@ -4,9 +4,14 @@
 {% block extra_head %}
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}" media="screen, projection"/>
     <link rel="stylesheet" href="{% static 'css/foundation.min.css' %}" media="screen, projection"/>
+    <script src="{% static 'js/jquery.js' %}"></script>
 {% endblock %}
 
 {% block content %}
+<div class="row"><a href="/">Home</a>&nbsp;|&nbsp;
+    <a href="/requests/"
+       onclick="window.open(this.href, '', 'scrollbars=1'); return false;">Requests</a>
+</div>
 <div class="row"><h1>42 Coffee Cups Test Assignment</h1></div>
 {% block page_content %}{% endblock page_content %}
 {% endblock %}
