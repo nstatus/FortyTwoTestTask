@@ -1,6 +1,7 @@
 from .models import Request
 
-class LogRequestsMiddleware:
+
+class LogRequestsMiddleware(object):
     def process_request(self, request):
         print request.method, request.build_absolute_uri()
         req = Request(data=request.method+" "+request.build_absolute_uri())
