@@ -15,4 +15,3 @@ class ContactsTest(TestCase):
         """ checking of contacts view """
         response = self.c.get('/')
         self.assertEqual(response.status_code, 200)
-
