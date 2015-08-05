@@ -15,8 +15,3 @@ class ContactsTest(TestCase):
         """ checking of contacts view """
         response = self.c.get('/')
         self.assertEqual(response.status_code, 200)
-
-    def test_requests(self):
-        """ checking of requests view """
-        response = self.c.get('/requests/')
-        self.assertEqual(response.status_code, 200)
